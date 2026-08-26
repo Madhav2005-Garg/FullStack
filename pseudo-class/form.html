@@ -16,6 +16,9 @@
         li:nth-child(even){
             color:aqua;
         }
+        li:not(:nth-child(3)){
+            background-color: red;
+        }
         input{
             border-width: 3px 3px 7px 8px;
             border-color: black;
@@ -53,6 +56,12 @@
             background-color: lightpink;
             box-shadow: 0 0 10px black;
         }
+        input:read-only{
+            border-width:0px;
+            box-shadow: 0 0 0;
+            background-color: lightgrey;
+
+        }
     </style>
 </head>
 <body>
@@ -75,5 +84,6 @@
     <input type="text" placeholder="Address" value="Agra" disabled>
     <input type="email" placeholder="Email">
     <input type="number" min="10" max="100" placeholder="Age">
+    <input type="text" value="Mr." readonly>
 </body>
 </html>
