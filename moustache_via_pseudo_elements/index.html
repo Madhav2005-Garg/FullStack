@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handlebar Moustache</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f0e6;
+  }
+  svg { width: 500px; height: auto; }
+</style>
+</head>
+<body>
+
+<svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6b4a30"/>
+      <stop offset="100%" stop-color="#2e1c10"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="340" cy="172" rx="30" ry="20" fill="url(#hairGrad)"/>
+
+  <g id="left-arm">
+    <path d="M340,175 C300,145 255,120 205,110 C160,101 120,105 95,122 C75,135 65,152 72,163 C79,174 95,177 103,168 C110,160 106,150 96,148 C104,142 118,143 124,151"
+          fill="none" stroke="url(#hairGrad)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M340,175 C300,145 255,120 205,110 C160,101 120,105 95,122 C75,135 65,152 72,163 C79,174 95,177 103,168 C110,160 106,150 96,148 C104,142 118,143 124,151"
+          fill="none" stroke="#7a5233" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+    <path d="M336,168 C298,140 258,118 212,108" fill="none" stroke="#8a6640" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M330,182 C290,155 248,132 200,120" fill="none" stroke="#1c1108" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M150,104 C110,109 85,122 68,140" fill="none" stroke="#8a6640" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <use href="#left-arm" transform="matrix(-1,0,0,1,680,0)"/>
+</svg>
+
+</body>
+</html>
