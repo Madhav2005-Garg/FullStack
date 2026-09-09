@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: grid;
+            outline:1px solid black;
+            height:500px;
+            width:500px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .con>div{
+            outline: 1px dashed grey;
+            font-size: 30px;
+        }
+        #box1{
+            grid-column: 1/3;
+            grid-row:1/3;
+            background-color: yellow; 
+        }
+        #box6{
+            grid-column:2/3;
+            grid-row:1/2;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+        <div id="box6">6</div>
+        <div id="box7">7</div>
+        <div id="box8">8</div>
+        <div id="box9">9</div>
+    </div>
+</body>
+</html>
